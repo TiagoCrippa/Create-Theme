@@ -22,6 +22,7 @@ class PageLogin extends StatelessWidget {
               ),
               MyTextField(
                 titulo: 'Search',
+                temIcone: true,
               )
             ],
           ),

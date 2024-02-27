@@ -5,15 +5,17 @@ class MyTextField extends StatelessWidget {
   const MyTextField({
     super.key,
     required this.titulo,
+    required this.temIcone,
   });
 
   final String titulo;
+  final bool temIcone;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       decoration: InputDecoration(
-        prefixIcon: Icon(Ionicons.search),
+        prefixIcon: temIcone == true ? Icon(Ionicons.search) : null,
         filled: true,
         fillColor: Color(0xffF5F7F8),
         label: Text(
