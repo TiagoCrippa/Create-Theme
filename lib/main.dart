@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Color(0xFF7D0A0A),
+          seedColor: Colors.blue,
         ),
         fontFamily: "Poppins",
         elevatedButtonTheme: ElevatedButtonThemeData(

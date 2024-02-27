@@ -23,10 +23,10 @@ AppBar appbar({
               onTap: () => Navigator.pop(context),
               child: Ink(
                 decoration: BoxDecoration(
-                  border: Border.all(color: Colors.grey),
-                  shape: BoxShape.circle,
-                  color: Colors.transparent, // Cor do círculo
-                ),
+                    border: Border.all(color: Colors.grey),
+                    shape: BoxShape.circle,
+                    color: Color(0xffF5F7F8) // Cor do círculo
+                    ),
                 child: Center(
                   child: Icon(
                     Ionicons.arrow_back,
@@ -69,7 +69,7 @@ class CircularIconButton extends StatelessWidget {
           decoration: BoxDecoration(
             border: Border.all(color: Colors.grey),
             shape: BoxShape.circle,
-            color: Colors.transparent, // Cor do círculo
+            color: Color(0xffF5F7F8), // Cor do círculo
           ),
           child: Center(
             child: Padding(
