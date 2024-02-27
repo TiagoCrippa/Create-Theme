@@ -1,6 +1,6 @@
 import 'package:criar_tema/components/my_app_bar.dart';
+import 'package:criar_tema/components/my_text_field.dart';
 import 'package:flutter/material.dart';
-import 'package:ionicons/ionicons.dart';
 
 class PageLogin extends StatelessWidget {
   const PageLogin({super.key});
@@ -20,26 +20,8 @@ class PageLogin extends StatelessWidget {
               SizedBox(
                 height: 40,
               ),
-              TextFormField(
-                decoration: InputDecoration(
-                  prefixIcon: Icon(Ionicons.search),
-                  filled: true,
-                  fillColor: Color(0xffF5F7F8),
-                  label: Text(
-                    "Pesquisar",
-                    style: TextStyle(color: Color(0xff152432)),
-                  ),
-                  border: OutlineInputBorder(
-                    borderSide: BorderSide(
-                        color: Colors.red, width: 0, style: BorderStyle.none),
-                    borderRadius: BorderRadius.circular(22),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                        color: Colors.red, width: 0, style: BorderStyle.none),
-                    borderRadius: BorderRadius.circular(22),
-                  ),
-                ),
+              MyTextField(
+                titulo: 'Search',
               )
             ],
           ),
